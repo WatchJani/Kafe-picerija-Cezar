@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { PriceList, Title, Container } from "./components"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export const App = () => {
+
+    const data = [
+        { food: "ENGLISH ASPARAGUS", price: "14.95", paragraf: "pellentesque enim. Aliquam tempor" },
+        { food: "ENGLISH ASPARAGUS", price: "14.95", paragraf: "pellentesque enim. Aliquam tempor" },
+        { food: "ENGLISH ASPARAGUS", price: "14.95", paragraf: "pellentesque enim. Aliquam tempor" },
+        { food: "ENGLISH ASPARAGUS", price: "14.95", paragraf: "pellentesque enim. Aliquam tempor" },
+        { food: "ENGLISH ASPARAGUS", price: "14.95", paragraf: "pellentesque enim. Aliquam tempor" },
+        { food: "ENGLISH ASPARAGUS", price: "14.95", paragraf: "pellentesque enim. Aliquam tempor" }
+    ]
+
+    return (
+        <Container>
+            <Title />
+            <div>
+                {data.map((data, index) => {
+                    return (
+                        <PriceList key={index} food={data} />
+                    )
+                })}
+            </div>
+        </Container>
+    )
 }
-
-export default App;

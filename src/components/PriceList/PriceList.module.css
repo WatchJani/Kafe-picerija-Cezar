@@ -1,0 +1,47 @@
+.PriceListContainer {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.PriceContainer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.PriceListParagraf {
+  color: #828281;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.DottedBg {
+  border-top: dotted 2px #ccc;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 100%;
+  z-index: -1;
+}
+
+.Price {
+  background-color: white;
+  padding-left: 10px;
+  line-height: 19.8px;
+  color: #333;
+  margin: 5px 0;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: Josefin Sans;
+}
+
+.Food {
+  color: #4b4741;
+  font-weight: 800;
+  padding-right: 10px;
+  background-color: white;
+  margin: 5px 0;
+  font-family: raleway, sans-serif;
+  font-size: 18px;
+}
